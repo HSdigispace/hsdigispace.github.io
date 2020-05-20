@@ -65,12 +65,12 @@ var renderBotsList = function (target, bList) {
       listHTML += "<div class='row'>";
     }
     listHTML += (
-      "<div class='column column--"+ (12/numberOfColumns) +" column--medium-6'>" +
+      "<div class='column column--"+ (12/numberOfColumns) +" column--medium-6 column--small-12'>" +
       "  <div class='bot'>" +
       "    <img class='bot__image' src='" + bList[i].img + "'/>" +
       "    <h2 class='bot__name'>" + bList[i].name + "</h2>" +
       "    <p class='bot__desc'>" + bList[i].desc + "</p>" +
-      "    <div class='bot__clickable' onclick='renderPreview(\"" + 
+      "    <div class='bot__clickable' onclick='renderPreview(\"" +
                 bList[i].preview + "\")'></div>" +
       "    <a class='bot__button' href='" + bList[i].file +
       "' download=''" + bList[i].name + "'>Download</a>" +

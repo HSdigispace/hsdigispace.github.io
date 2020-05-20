@@ -106,7 +106,7 @@ a:focus {
   font-weight: 600;
   padding: 0 20px;
   color: #3f3f44;
-  margin-right: 16px;
+  margin: 0 16px 16px 0;
   cursor: pointer;
 }
 
@@ -158,7 +158,7 @@ a:focus {
 .column--11 { width: 91.6666%; }
 .column--12 { width: 100%; }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 800px) {
   .page { padding: 128px 32px; }
   .column--medium-1 { width: 8.3333%; }
   .column--medium-2 { width: 16.6666%; }
@@ -172,6 +172,22 @@ a:focus {
   .column--medium-10 { width: 83.3333%; }
   .column--medium-11 { width: 91.6666%; }
   .column--medium-12 { width: 100%; }
+}
+
+@media only screen and (max-width: 600px) {
+  .page { padding: 128px 32px; }
+  .column--small-1 { width: 8.3333%; }
+  .column--small-2 { width: 16.6666%; }
+  .column--small-3 { width: 25%; }
+  .column--small-4 { width: 33.3333%; }
+  .column--small-5 { width: 41.6666%; }
+  .column--small-6 { width: 50%; }
+  .column--small-7 { width: 58.3333%; }
+  .column--small-8 { width: 66.6666%; }
+  .column--small-9 { width: 75%; }
+  .column--small-10 { width: 83.3333%; }
+  .column--small-11 { width: 91.6666%; }
+  .column--small-12 { width: 100%; }
 }
 
 
