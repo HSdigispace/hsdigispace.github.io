@@ -1,0 +1,258 @@
+/**
+  * Font
+  */
+  @font-face {
+    font-family: "nsicons";
+    src: url(/fonts/nsicons.eot), url(/fonts/nsicons.woff), url(/fonts/nsicons.woff2);
+  }
+
+
+/**
+  * Global
+  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #272343;
+}
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #272343;
+}
+small {
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 20px;
+  color: #272343;
+}
+strong {
+  font-weight: 600;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #272343;
+  border-bottom: 1px solid rgba(39, 35, 67, 0.5);
+  cursor: pointer;
+}
+a:hover {
+  background: linear-gradient(to bottom, rgba(227, 246, 245, 0) 0%, rgba(227, 246, 245, 1) 100%);
+  border-bottom: 1px solid #272343;
+}
+a:focus {
+  outline-width: 0;
+  box-shadow: 0 0 0px 4px #BAE8E9;
+}
+
+
+
+/**
+  * Cover
+  */
+.cover {
+  background: url("/images/cover.png");
+  background-size: cover;
+}
+.cover__logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.cover__name {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  color: #3f3f44;
+  margin-bottom: 20px;
+}
+.cover__desc {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3f3f44;
+  margin-bottom: 20px;
+}
+
+
+/**
+  * Pills
+  */
+.pills {
+  margin: 40px 0 0;
+  font-size: 0;
+  user-select: none;
+}
+
+.pills__item {
+  display: inline-block;
+  height: 40px;
+  border: 2px solid #3f3f44;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 600;
+  padding: 0 20px;
+  color: #3f3f44;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.pills__item:not([data-selected="true"]):hover {
+  background: rgba(57, 62, 70, 0.08);
+}
+
+.pills__item[data-selected="true"] {
+  background: #3f3f44;
+  color: #FFF;
+  cursor: default;
+}
+
+
+/**
+  * Layout
+  */
+.page {
+  max-width: 1240px;
+  padding: 128px 64px;
+  margin: 0 auto;
+}
+.row {
+  overflow: hidden;
+}
+.column {
+  width: 100%;
+  padding: 0 16px;
+  float: left;
+}
+.column:last-child {
+  float: right;
+}
+#bots-list .column:last-child { float: left; }
+
+.column:only-child {
+  float: none;
+}
+.column--1 { width: 8.3333%; }
+.column--2 { width: 16.6666%; }
+.column--3 { width: 25%; }
+.column--4 { width: 33.3333%; }
+.column--5 { width: 41.6666%; }
+.column--6 { width: 50%; }
+.column--7 { width: 58.3333%; }
+.column--8 { width: 66.6666%; }
+.column--9 { width: 75%; }
+.column--10 { width: 83.3333%; }
+.column--11 { width: 91.6666%; }
+.column--12 { width: 100%; }
+
+@media only screen and (max-width: 680px) {
+  .page { padding: 128px 32px; }
+  .column--medium-1 { width: 8.3333%; }
+  .column--medium-2 { width: 16.6666%; }
+  .column--medium-3 { width: 25%; }
+  .column--medium-4 { width: 33.3333%; }
+  .column--medium-5 { width: 41.6666%; }
+  .column--medium-6 { width: 50%; }
+  .column--medium-7 { width: 58.3333%; }
+  .column--medium-8 { width: 66.6666%; }
+  .column--medium-9 { width: 75%; }
+  .column--medium-10 { width: 83.3333%; }
+  .column--medium-11 { width: 91.6666%; }
+  .column--medium-12 { width: 100%; }
+}
+
+
+
+
+/**
+  * Line
+  */
+.line, .line--light {
+  width: 100%;
+  height: 4px;
+  background: #222831;
+  margin: 80px 0;
+}
+
+
+
+/**
+  * bot
+  */
+.bot {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  margin-bottom: 64px;
+  cursor: pointer;
+  transition: all 0.2s linear 0s;
+}
+
+
+.bot__image {
+  width: 100%;
+  margin: 0 0 8px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.bot__image:after {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08) inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bot__name {
+  padding: 12px;
+  font-size: 18px;
+}
+
+.bot__desc {
+  padding: 0 12px 12px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.bot__button {
+  display: block;
+  margin: 12px;
+  height: 40px;
+  border: 2px solid #3f3f44;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 600;
+  padding: 0 20px;
+  color: #3f3f44;
+  cursor: pointer;
+}
+.bot__button:hover {
+  background: #3f3f44;
+  color: #FFF;
+}
+
+.bot:hover {
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.16);
+}
+.bot:hover .bot__image {
+  opacity: 1;
+}

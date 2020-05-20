@@ -1,31 +1,46 @@
-<html>
-<head>
-<style>
-header {
-  text-align: center;
-  padding: 3px;
-  background-color: Salmon;
-  color: white;
-}
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
-  color: white;
-}
-</style>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,600,700,800&display=swap" rel="stylesheet">
+    <title>Helpshift Bot Exchange</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
 
-  <header>
-    <h1>Welcome to the Helpshift digi space</h1>
-    <h2>We are going to amaze you with the market place functionality</h2>
-  </header>
 
-<footer>
-  <p>Author: TENCENTS<br>
-  <a href="mailto:support@helpshift.com">support@helpshift.com</a></p>
-</footer>
-<script src= "js/helpshiftwc.js"></script>
-</body>
+    <div class="cover">
+      <div class="page">
+        <div class="row">
+          <div class="column column--8 column--medium-12">
+            <img class="cover__logo" src="/images/logo.png"/>
+            <h1 class="cover__name">Bot Store</h1>
+            <p class="cover__desc">Globally Seize worldwide manufactured products without multidisciplinary leadership skills</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column column--12 column--medium-12">
+            <div class="pills" id="filter-pills">
+              <span class="pills__item" data-selected="true" data-type="all">All</span>
+              <span class="pills__item">Privacy</span>
+              <span class="pills__item">Account</span>
+              <span class="pills__item">Billing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page">
+      <div id="bots-list"></div>
+    </div>
+
+    <script type="text/javascript" src="/js/bot-list.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/helpshiftwc.js"></script>
+  </body>
 </html>
