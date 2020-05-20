@@ -1,2 +1,1 @@
-# hsdigispace.github.io
-Hackshift
+# Please visit https://hsdigispace.github.io
