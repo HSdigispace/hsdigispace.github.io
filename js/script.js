@@ -66,7 +66,7 @@ var renderBotsList = function (target, bList) {
     }
     listHTML += (
       "<div class='column column--"+ (12/numberOfColumns) +" column--medium-6'>" +
-      "  <div class='bot'>" +
+      "  <div class='bot' onclick='renderPreview(\"" + bList[i].preview + "\")'>" +
       "    <img class='bot__image' src='" + bList[i].img + "'/>" +
       "    <h2 class='bot__name'>" + bList[i].name + "</h2>" +
       "    <p class='bot__desc'>" + bList[i].desc + "</p>" +
@@ -85,6 +85,17 @@ var renderBotsList = function (target, bList) {
   }
   target.innerHTML = listHTML;
 };
+
+var renderPreview = function(url) {
+  document.getElementById ("preview__container").src = url;
+  document.getElementById ("preview").style.display = "block";
+};
+
+var closePreview = function() {
+  document.getElementById ("preview__container").src = "";
+  document.getElementById ("preview").style.display = "none";
+};
+
 
 renderBotsList (document.getElementById ("bots-list"), BOT_LIST);
 

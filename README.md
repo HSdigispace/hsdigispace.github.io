@@ -1,2 +1,1 @@
-# nayansuthar.github.io
-Personal website
+# Helpshift Bot Store
