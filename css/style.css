@@ -187,6 +187,7 @@ a:focus {
   .column--small-10 { width: 83.3333%; }
   .column--small-11 { width: 91.6666%; }
   .column--small-12 { width: 100%; }
+  .hidden-on-small {display: none}
 }
 
 
