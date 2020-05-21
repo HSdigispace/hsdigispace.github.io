@@ -275,18 +275,32 @@ a:focus {
 
 .bot__button {
   display: inline-block;
-  margin: 12px 0 12px 12px;
-  height: 40px;
-  border: 2px solid #3f3f44;
-  border-radius: 4px;
+  width: 50%;
+  margin: 12px 0 0;
+  float: left;
+  height: 60px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(0,0,0,0.2);
   font-size: 14px;
-  line-height: 36px;
+  line-height: 60px;
   font-weight: 600;
   padding: 0 20px;
-  color: #3f3f44;
+  color: #d9455f;
   cursor: pointer;
   z-index: 2;
   position: relative;
+}
+.bot__button-download::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 40px;
+  background: rgba(0,0,0,0.2);
 }
 .bot__button:hover {
   background: #3f3f44;

@@ -77,9 +77,9 @@ var renderBotsList = function (target, bList) {
       "    <p class='bot__desc'>" + bList[i].desc + "</p>" +
       "    <div class='bot__clickable' onclick='renderPreview(\"" +
                 bList[i].preview + "\")'></div>" +
-      "    <a class='bot__button' href='" + bList[i].file +
+      "    <a class='bot__button bot__button-download' href='" + bList[i].file +
       "' download=''" + bList[i].name + "'>Download</a>" +
-      "    <button class='bot__button' onclick='launchBot(\"" + bList[i].msg + "\")'>Try</a>" +
+      "    <button class='bot__button' onclick='launchBot(\"" + bList[i].msg + "\")'>Try</button>" +
       "  </div>" +
       "</div>"
     );
