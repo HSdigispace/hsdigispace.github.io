@@ -47,6 +47,7 @@ var renderBotsList = function (target, bList) {
   var itemIndex = 0;
 
   for (var i = 0; i < bList.length; i++) {
+    var tagsHTML = "";
 
     // Skip if not matching filters
     var skip = false;
@@ -59,6 +60,11 @@ var renderBotsList = function (target, bList) {
     }
     if (skip) continue;
 
+    for (var j = 0; j < bList[i].tags.length; j++) {
+      tagsHTML += ("    <span class='bot__tag'>" + bList[i].tags[j] + "</span>");
+    }
+
+
     if (itemIndex%numberOfColumns == 0) {
       listHTML += "<div class='row'>";
     }
@@ -67,6 +73,7 @@ var renderBotsList = function (target, bList) {
       "  <div class='bot'>" +
       "    <img class='bot__image' src='" + bList[i].img + "'/>" +
       "    <h2 class='bot__name'>" + bList[i].name + "</h2>" +
+      "    <p class='bot__tags'>" + tagsHTML + "</p>" +
       "    <p class='bot__desc'>" + bList[i].desc + "</p>" +
       "    <div class='bot__clickable' onclick='renderPreview(\"" +
                 bList[i].preview + "\")'></div>" +
@@ -99,7 +106,7 @@ var closePreview = function() {
 };
 
 var launchBot = function (msg) {
-  window.helpshiftConfig.userId = Math.random().toString(36).substring(7);
+  window.helpshiftConfig.userId = Math.random().toString(36).substring(2);
   Helpshift("updateHelpshiftConfig");
   Helpshift("setInitialUserMessage", msg);
   Helpshift("open");
