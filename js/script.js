@@ -71,7 +71,9 @@ var renderBotsList = function (target, bList) {
     listHTML += (
       "<div class='column column--"+ (12/numberOfColumns) +" column--medium-6 column--small-12'>" +
       "  <div class='bot'>" +
-      "    <img class='bot__image' src='" + bList[i].img + "'/>" +
+      "    <div class='bot__image'>" +
+      "      <img src='" + bList[i].img + "'/>" +
+      "    </div>" +
       "    <h2 class='bot__name'>" + bList[i].name + "</h2>" +
       "    <p class='bot__tags'>" + tagsHTML + "</p>" +
       "    <p class='bot__desc'>" + bList[i].desc + "</p>" +
