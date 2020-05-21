@@ -77,8 +77,10 @@ var renderBotsList = function (target, bList) {
       "    <h2 class='bot__name'>" + bList[i].name + "</h2>" +
       "    <p class='bot__tags'>" + tagsHTML + "</p>" +
       "    <p class='bot__desc'>" + bList[i].desc + "</p>" +
-      "    <div class='bot__clickable' onclick='renderPreview(\"" +
-                bList[i].preview + "\")'></div>" +
+      "    <div class='bot__clickable' onclick='renderPreview(" +
+      "\"" + bList[i].preview + "\", " +
+      "\"" + bList[i].name + "\", " +
+      "\"" + bList[i].img + "\")'></div>" +
       "    <a class='bot__button bot__button-download' href='" + bList[i].file +
       "' download=''" + bList[i].name + "'>Download</a>" +
       "    <button class='bot__button' onclick='launchBot(\"" + bList[i].msg + "\")'>Try</button>" +
@@ -97,13 +99,17 @@ var renderBotsList = function (target, bList) {
   target.innerHTML = listHTML;
 };
 
-var renderPreview = function(url) {
-  document.getElementById ("preview__container").src = url;
+var renderPreview = function(url, name, img) {
+  document.getElementById ("preview__container").innerHTML = (
+    "<embed src='" + url + "#zoom=150" + "' type='application/pdf'></embed>"
+  );
+  document.getElementById ("preview__title").innerText = name;
   document.getElementById ("preview").style.display = "block";
+  document.getElementById ("preview__header").style.backgroundImage = "url('"+ img + "')";
 };
 
 var closePreview = function() {
-  document.getElementById ("preview__container").src = "";
+  document.getElementById ("preview__container").innerHTML = "";
   document.getElementById ("preview").style.display = "none";
 };
 

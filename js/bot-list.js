@@ -4,7 +4,7 @@ var BOT_LIST = [
     desc: "Help your users recover their lost account in a secure and authenticated way.",
     img: "/images/bot-2.png",
     tags: ["Account", "Gaming", "Ecommerce"],
-    preview: "/docs/Lost Account.pdf",
+    preview: "/docs/lost-account.pdf",
     file: "/bots/sample.json",
     msg: "I have lost my account"
   },
@@ -13,7 +13,7 @@ var BOT_LIST = [
     desc: "A simple questionaire to help people do a self assessment for any COVID 2019 simptoms",
     img: "/images/bot-7.png",
     tags: ["Healthcare", "COVID"],
-    preview: "/docs/Covid Self Assessment.pdf",
+    preview: "/docs/covid-screening.pdf",
     file: "/bots/sample.json",
     msg: "I think I am infected by Corona"
   },
@@ -21,8 +21,8 @@ var BOT_LIST = [
     name: "Ask for Feedback",
     desc: "Collect feedback from your customers about their experience with support team",
     img: "/images/bot-5.png",
-    tags: ["Feedback"],
-    preview: "/docs/sample.pdf",
+    tags: ["Gaming", "Ecommerce", "Hospitality"],
+    preview: "/docs/feedback.pdf",
     file: "/bots/sample.json",
     msg: "Thanks for helping me"
   },

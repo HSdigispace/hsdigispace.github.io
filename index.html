@@ -56,8 +56,13 @@
 
 
     <div id="preview" style="display:none">
-      <embed id="preview__container" src="" type="application/pdf"></embed>
-      <button id="preview__close" onclick="closePreview()">X</button>
+      <div id="preview__container">
+        <embed src="" type="application/pdf"></embed>
+      </div>
+      <div id="preview__header">
+        <button id="preview__close" onclick="closePreview()">⬅</button>
+        <h2 id="preview__title">Sample</h2>
+      </div>
     </div>
 
 
