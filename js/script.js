@@ -1,8 +1,6 @@
 // Global Variables
 var selectedPills = ["All"];
 
-
-
 var createPills = function (pillsEl, onChange) {
   var pills = pillsEl.querySelectorAll (".pills__item");
   var allPill = pillsEl.querySelector (".pills__item[data-type='all']");
@@ -74,7 +72,7 @@ var renderBotsList = function (target, bList) {
                 bList[i].preview + "\")'></div>" +
       "    <a class='bot__button' href='" + bList[i].file +
       "' download=''" + bList[i].name + "'>Download</a>" +
-
+      "    <button class='bot__button' onclick='launchBot(\"" + bList[i].msg + "\")'>Try</a>" +
       "  </div>" +
       "</div>"
     );
@@ -99,6 +97,13 @@ var closePreview = function() {
   document.getElementById ("preview__container").src = "";
   document.getElementById ("preview").style.display = "none";
 };
+
+var launchBot = function (msg) {
+  window.helpshiftConfig.userId = Math.random().toString(36).substring(7);
+  Helpshift("updateHelpshiftConfig");
+  Helpshift("setInitialUserMessage", msg);
+  Helpshift("open");
+}
 
 
 renderBotsList (document.getElementById ("bots-list"), BOT_LIST);

@@ -187,7 +187,8 @@ a:focus {
   .column--small-10 { width: 83.3333%; }
   .column--small-11 { width: 91.6666%; }
   .column--small-12 { width: 100%; }
-  .hidden-on-small {display: none}
+  .hidden-on-small {visbility: hidden}
+  .visble-on-small {visibility: visible;}
 }
 
 
@@ -259,7 +260,7 @@ a:focus {
 
 .bot__button {
   display: inline-block;
-  margin: 12px;
+  margin: 12px 0 12px 12px;
   height: 40px;
   border: 2px solid #3f3f44;
   border-radius: 4px;
@@ -358,4 +359,12 @@ a:focus {
   width: 120px;
   bottom: 100px;
   right: 40px;
+}
+
+
+.bot-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
