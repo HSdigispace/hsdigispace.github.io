@@ -5,7 +5,7 @@ var BOT_LIST = [
     img: "/images/bot-2.png",
     tags: ["Account", "Gaming", "E-commerce"],
     preview: "/docs/lost-account.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/lost-account.bot",
     msg: "I have lost my account"
   },
   {
@@ -14,7 +14,7 @@ var BOT_LIST = [
     img: "/images/bot-7.png",
     tags: ["Healthcare", "COVID"],
     preview: "/docs/covid-screening.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/covid-screening.bot",
     msg: "I think I am infected by Corona"
   },
   {
@@ -23,7 +23,7 @@ var BOT_LIST = [
     img: "/images/bot-5.png",
     tags: ["Gaming", "E-commerce", "Hospitality"],
     preview: "/docs/feedback.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/feedback.bot",
     msg: "Thanks for helping me"
   },
 
@@ -35,7 +35,7 @@ var BOT_LIST = [
     img: "/images/bot-4.png",
     tags: ["Gaming", "Healthcare"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -44,7 +44,7 @@ var BOT_LIST = [
     img: "/images/bot-9.png",
     tags: ["Account"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -53,7 +53,7 @@ var BOT_LIST = [
     img: "/images/bot-10.png",
     tags: ["Account"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -62,7 +62,7 @@ var BOT_LIST = [
     img: "/images/bot-8.png",
     tags: ["Account"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -71,7 +71,7 @@ var BOT_LIST = [
     img: "/images/bot-1.png",
     tags: ["Gaming", "Hospitality"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -80,7 +80,7 @@ var BOT_LIST = [
     img: "/images/bot-3.png",
     tags: ["Billing", "E-commerce"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -89,7 +89,7 @@ var BOT_LIST = [
     img: "/images/bot-2.png",
     tags: ["Order", "E-commerce"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -98,7 +98,7 @@ var BOT_LIST = [
     img: "/images/bot-9.png",
     tags: ["Order", "E-commerce"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -107,7 +107,7 @@ var BOT_LIST = [
     img: "/images/bot-8.png",
     tags: ["Order", "E-commerce"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -116,7 +116,7 @@ var BOT_LIST = [
     img: "/images/bot-6.png",
     tags: ["Hospitality"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -125,7 +125,7 @@ var BOT_LIST = [
     img: "/images/bot-4.png",
     tags: ["Hospitality", "E-commerce"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   },
   {
@@ -134,7 +134,7 @@ var BOT_LIST = [
     img: "/images/bot-1.png",
     tags: ["E-commerce", "Healthcare"],
     preview: "/docs/sample.pdf",
-    file: "/bots/sample.json",
+    file: "/bots/sample.bot",
     msg: "Hello there"
   }
 ];
