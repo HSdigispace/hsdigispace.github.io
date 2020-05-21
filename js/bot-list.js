@@ -10,7 +10,7 @@ var BOT_LIST = [
   },
   {
     name: "COVID Self Assessment",
-    desc: "A simple questionnaire to help people do a self assessment for any COVID 2019 symptoms",
+    desc: "A simple questionnaire to help people do a self assessment for any COVID-19 symptoms",
     img: "/images/bot-7.png",
     tags: ["Healthcare", "COVID"],
     preview: "/docs/covid-screening.pdf",
